@@ -1,0 +1,349 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
+   
+
+    <!-- facebook 分享的標題 -->
+    <meta property="og:title" content="報導者 The Reporter">
+    <meta data-react-helmet="true" property="og:description" content="《報導者》是由「財團法人報導者文化基金會」成立的非營利網路媒體，致力於公共領域的深度報導及調查報導，為讀者持續追蹤各項重要議題。我們秉持開放參與的精神，結合各種進步價值與公民力量，共同打造多元進步的社會與媒體環境。">
+    <!-- facebook 分享的縮圖 -->
+    <meta property="og:image" content="https://www.twreporter.org/images/og-image-large.jpg">
+    <meta data-react-helmet="true" property="og:type" content="website">
+    <!-- facebook 分享的簡述 -->
+    <meta property="og:description" content="《報導者》是由「財團法人報導者文化基金會」成立的非營利網路媒體，致力於公共領域的深度報導及調查報導，為讀者持續追蹤各項重要議題。我們秉持開放參與的精神，結合各種進步價值與公民力量，共同打造多元進步的社會與媒體環境。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.twreporter.org/" />
+
+    <!-- 瀏覽器上的 tab 的縮圖 -->
+    <link href="https://www.twreporter.org/asset/favicon.png" rel="shortcut icon" />
+</head>
+<style>
+    article {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    article>header>h1 {
+        font-size: 36px;
+        font-weight: 700;
+        color: #6D615B;
+        margin-bottom: 20px;
+    }
+
+    article>h2 {
+        font-size: 22px;
+        font-weight: 700;
+        color: #6D615B;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+
+    article>p {
+        font-size: 18px;
+        font-weight: 300;
+        color: #6D615B;
+        margin-bottom: 20px;
+    }
+
+    article>a {
+        margin-bottom: 20px;
+        cursor: pointer;
+    }
+
+    article>a>div {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .intro {
+        font-size: 22px;
+        font-weight: 500;
+        width: 80%;
+        margin: 20px auto 40px auto;
+        padding: 10px 20px 10px 20px;
+        color: #6D615B;
+        background-color: #F2DCBA;
+    }
+
+
+
+    h5 {
+        font-size: 28px;
+        font-weight: 700;
+        color: #6D615B
+    }
+
+    .media-body {
+        margin: auto;
+    }
+
+    figcaption {
+        font-size: 16px;
+        font-weight: 300;
+        color: #6d6d6d;
+    }
+
+    .flex-container {
+        display: flex;
+        margin: auto;
+        width: 300px;
+        justify-content: space-around;
+    }
+
+    .flex-item1 {
+        font-weight: bold;
+        font-size: 28px;
+        margin: auto;
+        cursor: default;
+        
+    }
+    .flex-item2 {
+        font-weight: bold;
+        font-size: 28px;
+        margin: auto;
+        cursor: default;
+        text-align: center
+    }
+    .flex-item3 {
+        font-weight: bold;
+        font-size: 28px;
+        margin: auto;
+        cursor: default;
+        text-align: center
+    }
+    .flex-item4 {
+        font-weight: bold;
+        font-size: 28px;
+        margin: auto;
+        cursor: default;
+        text-align: center
+    }
+
+    .flex-footer {
+        display: flex;
+        margin: auto;
+        justify-content: space-around;
+        text-align: center;
+    }
+
+    .footer-item {
+        font-weight: bold;
+        font-size: 18px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    footer {
+        margin-top: 40px;
+        background-color: #F2DCBA
+    }
+
+    body>header {
+        background-color: #F2DCBA;
+        margin-bottom: 40px;
+    }
+
+    .image {
+        width: 100%
+    }
+
+
+    .related-box1 {
+        width: 80%;
+        margin: 40px auto 0 auto;
+        padding: 20px;
+        background-color: #92AFB5;
+
+    }
+
+    .related-box1:hover {
+        background-color: white;
+        cursor: pointer;
+    }
+
+    .related-box2 {
+        width: 80%;
+        margin: 40px auto 0 auto;
+        padding: 20px;
+        background-color: #D38D8E;
+
+    }
+
+    .related-box2:hover {
+        background-color: white;
+        cursor: pointer;
+    }
+
+    .related-box3 {
+        width: 80%;
+        margin: 40px auto 0 auto;
+        padding: 20px;
+        background-color: #9FAA8F;
+    }
+
+    .related-box3:hover {
+        background-color: white;
+        cursor: pointer;
+    }
+
+
+    @media screen and (max-width: 768px) {
+        .flex-footer {
+            width: 200px;
+        }
+
+
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+        .flex-footer {
+            width: 500px;
+        }
+        article {
+            margin-left: 80px;
+            margin-right: 80px;
+        }
+        .image {
+            width: 80%;
+        }
+
+        .related-box1,.related-box2,.related-box3 {
+            width: 70%
+        }
+        .intro {
+            width: 70%
+        }
+        .flex-container{
+            width: 600px;
+        }
+        .flex-item1{
+            width:100px;
+        }
+        .flex-item2{
+            width:400px;
+            letter-spacing: 1.5
+                   }
+    }
+
+    @media screen and (min-width:1024px) {
+        .flex-footer {
+            width: 800px;
+        }
+        article {
+            margin-left: 200px;
+            margin-right: 200px;
+        }
+        .image {
+            width: 60%;
+        }
+        .intro {
+            width: 50%
+        }
+        .related-box1,.related-box2,.related-box3 {
+            width: 50%
+        }
+        .flex-container{
+            width:600px;
+        }
+        .flex-item1{
+            width:100px;
+        }
+        .flex-item2{
+            width:400px;
+            letter-spacing: 2
+                   }
+    }
+</style>
+
+<body style="font-family: Microsoft JhengHei, Noto Sans TC, PingFang TC,Apple LiGothic Medium">
+    <header>
+        <div class="flex-container" >
+            <div class="flex-item1">
+                <img title="回首頁"src="logo.png" width="50px"></img>
+            </div>
+
+            <div class="flex-item2"> 我們畢業啦！</div>
+            <div class="flex-item3">
+                <a href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent('https://www.twreporter.org/'))));">
+                    <img title="分享到Facebook" src="fb.png" width="30px" />
+                </a>
+                </div>
+            <div class="flex-item4">
+            <a target="_blank" href="http://twitter.com/home/?status=報導者 https://www.twreporter.org/">
+                <img title="分享到twitter" src="Twitter.png" width="30px" /></a>
+            </div>
+        </div>
+
+    </header>
+
+
+    <div style="text-align: center">
+        <img src="grat.jpg" class="image" />
+    </div>
+
+    <div class="intro">
+        <p>政大傳播學院大一大二不分系第一屆學生於2018年6月正式畢業！身為第一屆學生，大學四年間不斷成為「實驗對象」，於課程設計、同儕互動都與過往有了相當大的差異。這四年過去之後，究竟第一屆學生們對大一大二不分系有何想法？有何建議？接觸過分系、不分系的教授們對於這群學生又有何看法？
+        </p>
+        <p>本專案將帶您領略大一大二不分系的全貌，不止最常見的課程規劃、分配，更帶給您學生、老師們對不分系的真心話！不論您是對政大傳願有任何想像的高中生，正在猶豫該分流至哪個系的本系生，關心學生的傳院教師，或是想一窺兒女在學校學些什麼的家長們，看這裡就對啦！</p>
+    </div>
+
+    <div class="media related-box1">
+        <div class="media-body">
+            <h5 class="mt-0;">關於傳院不分系</h5>
+        </div>
+    </div>
+
+    <div class="media related-box2" >
+        <div class="media-body">
+            <h5 class="mt-0">師生眼中的不分系</h5>
+        </div>
+    </div>
+
+    <div class="media related-box3" >
+        <div class="media-body">
+            <h5 class="mt-0">傳播的現實與挑戰【影視系列專題】</h5>
+        </div>
+    </div>
+
+
+
+    </article>
+    <footer>
+        <div class="flex-footer">
+            <div class="footer-item">
+                <img src="info.png" width="50px"></img>
+                <div>關於我們</div>
+            </div>
+            <div class="footer-item">
+                <img src="phone-book.png" width="50px"></img>
+                <div>聯絡我們</div>
+            </div>
+
+        </div>
+    </footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+<script>
+    $(document).on('click', '[data-toggle="lightbox"]', function (event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
+    });
+
+</script>
+
+<script src='http://platform.twitter.com/widgets.js' type='text/javascript' />
+
+
+
+</html>
