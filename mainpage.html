@@ -4,7 +4,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
+    <meta property="og:title" content="大銀幕背後－影視產業的現實與挑戰" />
+
+    <meta property="og:description" content="本系列專題以影視產業作為出發點，探討台灣的影視產業現況，延伸至擁有影視夢的相關科系學生，帶出大銀幕背後的真相。" />
+
+    <meta property="og:url" content="https://stevenmanto.github.io/communication/home" />
+
+    <meta property="og:image" content="https://stevenmanto.github.io/communication/logo.png" />
+
+    <meta property="og:type" content="website" />
+    <link href="https://stevenmanto.github.io/communication/logo.png" rel="shortcut icon" />
 </head>
 <style>
     article {
@@ -63,6 +72,12 @@
         color: #6D615B
     }
 
+    .related-font {
+        font-size: 18px;
+        font-weight: 500;
+        color: #6D615B
+    }
+
     .related-box {
         width: 80%;
         margin: 40px auto 0 auto;
@@ -76,7 +91,7 @@
     }
 
     .related-img {
-        width: 30%
+        width: 20%
     }
 
     .media-body {
@@ -92,15 +107,49 @@
     .flex-container {
         display: flex;
         margin: auto;
-        width: 280px;
+        width: 300px;
         justify-content: space-around;
     }
 
-    .flex-item {
+    .flex-item1 {
+        font-weight: bold;
+        font-size: 28px;
+        margin: auto;
+        cursor: pointer;
+
+    }
+
+    .flex-item2 {
         font-weight: bold;
         font-size: 28px;
         margin: auto;
         cursor: default;
+        text-align: center
+    }
+
+    .flex-item3 {
+        font-weight: bold;
+        font-size: 28px;
+        margin: auto;
+        
+        text-align: center
+    }
+
+    .flex-item4 {
+        font-weight: bold;
+        font-size: 28px;
+        margin: auto;
+       
+        text-align: center
+    }
+    .flex-item1:hover{
+        opacity: 0.5;
+    }
+    .flex-item3:hover{
+        opacity: 0.5;
+    }
+    .flex-item4:hover{
+        opacity: 0.5;
     }
 
     .flex-footer {
@@ -116,15 +165,18 @@
         margin-top: 50px;
         margin-bottom: 50px;
     }
+    .footer-item:hover{
+        opacity: 0.5;
+    }
 
     footer {
         min-width: 80px;
         margin-top: 40px;
-        background-color:#9FAA8F;
+        background-color: #9FAA8F;
     }
 
     body>header {
-        background-color:#9FAA8F;
+        background-color: #9FAA8F;
         margin-bottom: 20px;
     }
 
@@ -132,11 +184,60 @@
         width: 100%
     }
 
-    @media screen and (max-width: 768px) {
+    .related-mobile-font {
+        font-size: 20px;
+        font-weight: 700;
+        color: #6D615B
+    }
+    .related-box1 {
+        width: 80%;
+        margin: 40px auto 0 auto;
+        padding: 20px;
+        background-color: #92AFB5;
+
+    }
+
+    .related-box1:hover {
+        background-color: white;
+        cursor: pointer;
+    }
+
+    .related-box2 {
+        width: 80%;
+        margin: 40px auto 0 auto;
+        padding: 20px;
+        background-color: #D38D8E;
+
+    }
+
+    .related-box2:hover {
+        background-color: white;
+        cursor: pointer;
+    }
+    .related-reading{
+        text-align: center;
+        margin-top:40px;
+        font-size: 24px;
+        font-weight: 700;
+        color: #6D615B
+    }
+    .related-reading2{
+        text-align: center;
+       
+        font-size: 24px;
+        font-weight: 700;
+        color: #6D615B
+    }
+    @media screen and (max-width: 767px) {
         .flex-footer {
             width: 200px;
         }
-
+        .related-font {
+            display: none;
+        }
+        h5 {
+            display: none;
+        }
 
     }
 
@@ -154,7 +255,29 @@
         .related-img {
             width: 20%
         }
-     
+        .flex-container {
+            width: 600px;
+        }
+        .flex-item1 {
+            width: 100px;
+        }
+        .flex-item2 {
+            width: 400px;
+            letter-spacing: 1.5
+        }
+        h5 {
+            font-size: 22px
+        }
+        .related-font {
+            font-size: 16px;
+        }
+        .related-mobile-font {
+            display: none;
+        }
+        .related-box1,.related-box2 {
+            width: 70%
+        }
+
     }
 
     @media screen and (min-width:1024px) {
@@ -171,26 +294,45 @@
         .related-img {
             width: 10%
         }
-       
+        .flex-container {
+            width: 600px;
+        }
+        .flex-item1 {
+            width: 100px;
+        }
+        .flex-item2 {
+            width: 400px;
+            letter-spacing: 2
+        }
+        .related-mobile-font {
+            display: none;
+        }
+        .related-box1,.related-box2 {
+            width: 50%
+        }
+
+
     }
 </style>
 
 <body style="font-family: Microsoft JhengHei, Noto Sans TC, PingFang TC,Apple LiGothic Medium">
     <header>
         <div class="flex-container">
-            <div class="flex-item">
-                <img title="回首頁"src="logo.png" width="50px"></img>
+            <a href="https://stevenmanto.github.io/communication/home"  target="_self">
+            <div class="flex-item1">
+                <img title="回首頁" src="logo.png" width="50px"></img>
             </div>
-
-            <div class="flex-item"> 我們畢業啦！</div>
-            <div class="flex-item">
-                <a href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent('https://www.twreporter.org/'))));">
+</a>
+            <div class="flex-item2"> 影視系列專題</div>
+            <div class="flex-item3">
+                <a href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent('https://stevenmanto.github.io/communication/home'))));">
                     <img title="分享到Facebook" src="fb.png" width="30px" />
                 </a>
-                </div>
-            <div class="flex-item">
-            <a target="_blank" href="http://twitter.com/home/?status=報導者 https://www.twreporter.org/">
-                <img title="分享到twitter" src="Twitter.png" width="30px" /></a>
+            </div>
+            <div class="flex-item4">
+                <a target="_blank" href="http://twitter.com/home/?status=首屆政大傳院大一大二不分系畢業了! https://stevenmanto.github.io/communication/home">
+                    <img title="分享到twitter" src="Twitter.png" width="30px" />
+                </a>
             </div>
         </div>
 
@@ -205,29 +347,40 @@
                     文／鄭順祥　龐家姍　吳旻蓁　薛若儀　江殷年　顏麗家
                 </span>
         </header>
-     
-      
-        <div class="media related-box">
-            <img class="align-self-center mr-3 related-img" src="compare.jpg" alt="夢想燒盡之後　被忽略的影視勞動">
-            <div class="media-body">
-                <h5 class="mt-0;">夢想燒盡之後　被忽略的影視勞動</h5>
-            </div>
-        </div>
 
-        <div class="media related-box">
-            <img class="align-self-center mr-3 related-img" src="money.png" alt="拍片入場券　輔導金的現實面">
-            <div class="media-body">
-                <h5 class="mt-0">拍片入場券　輔導金的現實面</h5>
+        <a href="https://stevenmanto.github.io/communication/page1" target="_self" style="text-decoration: none">
+            <div class="media related-box">
+                <img class="align-self-center mr-3 related-img" src="crew.jpg" alt="夢想燒盡之後　被忽略的影視勞動">
+                <div class="media-body">
+                    <h5>夢想燒盡之後　被忽略的影視勞動</h5>
+                    <div class="related-mobile-font">夢想燒盡之後</div>
+                    <div class="related-mobile-font">被忽略的影視勞動</div>
+                    <p class="related-font">打開電視，節目播送的是重播數次的《甄環傳》、《瑯琊榜》，想看最新的韓劇就上愛奇藝或楓林網，即使進電影院，台灣觀眾選擇的不外乎是好萊塢大片，台灣影視產業出了什麼問題？</p>
+                </div>
             </div>
-        </div>
-
-        <div class="media related-box">
-            <img class="align-self-center mr-3 related-img" src="numbers.jpg" alt="數位時代求生存　影視科系的專業與焦慮" >
-            <div class="media-body">
-                <h5 class="mt-0">數位時代求生存　影視科系的專業與焦慮</h5>
+        </a>
+        <a href="https://stevenmanto.github.io/communication/page2" target="_self" style="text-decoration: none">
+            <div class="media related-box">
+                <img class="align-self-center mr-3 related-img" src="money.png" alt="拍片入場券　輔導金的現實面">
+                <div class="media-body">
+                    <h5>拍片入場券　輔導金的現實面</h5>
+                    <div class="related-mobile-font">拍片入場券</div>
+                    <div class="related-mobile-font">輔導金的現實面</div>
+                    <p class="related-font">繼今年1月《52赫茲我愛你》賣出四千萬票房後，3月上映的《目擊者》也在十天內突破兩千萬票房，數字亮麗之外，也是國內近年少見的音樂劇和類型片，這兩部片在去年分別獲得電影輔導金新台幣1500萬元和2000萬元補助。</p>
+                </div>
             </div>
-        </div>
-
+        </a>
+        <a href="https://stevenmanto.github.io/communication/page3" target="_self" style="text-decoration: none">
+            <div class="media related-box">
+                <img class="align-self-center mr-3 related-img" src="numbers.jpg" alt="數位時代求生存　影視科系的專業與焦慮">
+                <div class="media-body">
+                    <h5>數位時代求生存　影視科系的專業與焦慮</h5>
+                    <div class="related-mobile-font">數位時代求生存</div>
+                    <div class="related-mobile-font">影視科技的專業與焦慮</div>
+                    <p class="related-font">「系上學到的東西很少，80%是自己發展興趣。」 影視科系學生都有著相同心境，覺得學校教育不足、缺乏實作，再加上資訊網路的蓬勃，人人都能學習攝影、剪接、調光，影視相關科系學生的優勢不再。這使得即將入行的學生們擔憂，大學四年的學習，到底替未來想從事的工作打下多少基礎？</p>
+                </div>
+            </div>
+        </a>
 
 
 
@@ -237,19 +390,37 @@
         <img src="award.jpg" class="image" />
         <figcaption>本專題於中正大學第15屆新傳獎獲獎</figcaption>
     </figure>
-
+    <div class="related-reading2">其他主題</div>
+    <div class="media related-box1">
+            <div class="media-body">
+                <div class="related-reading2" >關於傳院不分系</div>
+            </div>
+        </div>
+    
+        <div class="media related-box2" >
+            <div class="media-body">
+                <div class="related-reading2" >師生眼中的不分系</div>
+            </div>
+        </div>
     <footer>
+
         <div class="flex-footer">
-            <div class="footer-item">
-                <img src="info.png" width="50px"></img>
-                <div>關於我們</div>
-            </div>
-            <div class="footer-item">
-                <img src="phone-book.png" width="50px"></img>
-                <div>聯絡我們</div>
-            </div>
+            <a href="https://stevenmanto.github.io/communication/aboutus" target="_self" style="text-decoration: none;color:black">
+                <div class="footer-item">
+                    <img src="info.png" width="50px"></img>
+                    <div>關於我們</div>
+                </div>
+            </a>
+            <a href="https://stevenmanto.github.io/communication/contact"  target="_self" style="text-decoration: none;color:black">
+                <div class="footer-item">
+                    <img src="phone-book.png" width="50px"></img>
+                    <div>聯絡我們</div>
+                </div>
+            </a>
 
         </div>
+        
+
     </footer>
 </body>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -258,13 +429,6 @@
     crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
-<script>
-    $(document).on('click', '[data-toggle="lightbox"]', function (event) {
-        event.preventDefault();
-        $(this).ekkoLightbox();
-    });
 
-</script>
 
 </html>
