@@ -4,7 +4,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
+    <meta property="og:title" content="夢想燒盡之後 被忽略的影視勞動" />
+
+    <meta property="og:description" content="打開電視，節目播送的是重播數次的《甄環傳》、《瑯琊榜》，想看最新的韓劇就上愛奇藝或楓林網，即使進電影院，台灣觀眾選擇的不外乎是好萊塢大片，台灣影視產業出了什麼問題？"
+    />
+
+    <meta property="og:url" content="https://stevenmanto.github.io/communication/page1" />
+
+    <meta property="og:image" content="https://stevenmanto.github.io/communication/crew.jpg" />
+
+    <meta property="og:type" content="website" />
+    <link href="https://stevenmanto.github.io/communication/logo.png" rel="shortcut icon" />
 </head>
 <style>
     article {
@@ -55,27 +65,65 @@
         background-color: #F2DCBA;
     }
 
-      h5 {
+    h5 {
         font-size: 18px;
         font-weight: 700;
         color: #6D615B
     }
+
     .media-body {
         margin: auto;
     }
 
-       .flex-container {
+    .flex-container {
         display: flex;
         margin: auto;
-        width: 280px;
+        width: 300px;
         justify-content: space-around;
     }
 
-    .flex-item {
+    .flex-item1 {
+        font-weight: bold;
+        font-size: 28px;
+        margin: auto;
+        cursor: pointer;
+
+    }
+
+    .flex-item2 {
         font-weight: bold;
         font-size: 28px;
         margin: auto;
         cursor: default;
+        text-align: center
+    }
+
+    .flex-item3 {
+        font-weight: bold;
+        font-size: 28px;
+        margin: auto;
+
+        text-align: center
+    }
+
+    .flex-item4 {
+        font-weight: bold;
+        font-size: 28px;
+        margin: auto;
+
+        text-align: center
+    }
+
+    .flex-item1:hover {
+        opacity: 0.5;
+    }
+
+    .flex-item3:hover {
+        opacity: 0.5;
+    }
+
+    .flex-item4:hover {
+        opacity: 0.5;
     }
 
     .flex-footer {
@@ -92,6 +140,10 @@
         margin-bottom: 50px;
     }
 
+    .footer-item:hover {
+        opacity: 0.5;
+    }
+
     footer {
         min-width: 80px;
         margin-top: 40px;
@@ -102,6 +154,7 @@
         background-color: #9FAA8F;
         margin-bottom: 20px;
     }
+
     .related-box {
         width: 80%;
         margin: 40px auto 0 auto;
@@ -118,9 +171,33 @@
         width: 30%
     }
 
-       @media screen and (max-width: 768px) {
+    .hoverimg {
+        width: 100%
+    }
+
+    .related-mobile-font {
+        font-size: 18px;
+        font-weight: 700;
+        color: #6D615B
+    }
+    .related-reading{
+        text-align: center;
+        margin-top:40px;
+        font-size: 18px;
+        font-weight: 700;
+        color: #6D615B
+    }
+
+
+    @media screen and (max-width: 767px) {
         .flex-footer {
             width: 200px;
+        }
+        .related-font {
+            display: none;
+        }
+        h5 {
+            display: none;
         }
 
 
@@ -137,7 +214,27 @@
         .related-img {
             width: 20%
         }
-        
+        .hoverimg {
+            width: 80%
+        }
+        .flex-container {
+            width: 600px;
+        }
+        .flex-item1 {
+            width: 100px;
+        }
+        .flex-item2 {
+            width: 400px;
+            letter-spacing: 1.5
+        }
+        .related-font {
+            font-size: 16px;
+        }
+        .related-mobile-font {
+            display: none;
+        }
+
+
     }
 
     @media screen and (min-width:1024px) {
@@ -151,138 +248,165 @@
         .related-img {
             width: 10%
         }
+        .hoverimg {
+            width: 60%
+        }
+        .hoverimg:hover {
+            width: 90%
+        }
+        .flex-container {
+            width: 600px;
+        }
+        .flex-item1 {
+            width: 100px;
+        }
+        .flex-item2 {
+            width: 400px;
+            letter-spacing: 2
+        }
+        .related-mobile-font {
+            display: none;
+        }
     }
 </style>
 
 <body style="font-family: Microsoft JhengHei, Noto Sans TC, PingFang TC,Apple LiGothic Medium">
     <header>
         <div class="flex-container">
-            <div class="flex-item">
-                <img title="回首頁"src="logo.png" width="50px"></img>
+            <div class="flex-item1">
+                <img title="回首頁" src="logo.png" width="50px"></img>
             </div>
 
-            <div class="flex-item"> 我們畢業啦！</div>
-            <div class="flex-item">
-                <a href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent('https://www.twreporter.org/'))));">
+            <div class="flex-item2"> 影視系列專題</div>
+            <div class="flex-item3">
+                <a href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent('https://stevenmanto.github.io/communication/home'))));">
                     <img title="分享到Facebook" src="fb.png" width="30px" />
                 </a>
+            </div>
+            <div class="flex-item4">
+                <a target="_blank" href="http://twitter.com/home/?status=首屆政大傳院大一大二不分系畢業了! https://stevenmanto.github.io/communication/home">
+                    <img title="分享到twitter" src="Twitter.png" width="30px" />
+                </a>
+            </div>
+        </div>
+
+    </header>
+
+    <article>
+        <header>
+            <h1>夢想燒盡之後 被忽略的影視勞動</h1>
+            <div>
+                <span style="font-size: 18px;color:#6D615B">
+                    文／鄭順祥　龐家姍　吳旻蓁　薛若儀　江殷年　顏麗家
+                </span>
+        </header>
+        <div class="intro">
+            <p>打開電視，節目播送的是重播數次的《甄環傳》、《瑯琊榜》，想看最新的韓劇就上愛奇藝或楓林網，即使進電影院，台灣觀眾選擇的不外乎是好萊塢大片，台灣影視產業出了什麼問題？是導演的錯？編劇的錯？還是影視產業血汗勞動造成內容品質低落？超時、低薪，有一頓沒一頓的影視勞動者在台灣險惡的環境中慢慢消磨最初的熱情……</p>
+        </div>
+
+        <div style="text-align: center">
+            <img src="crew.jpg" class="hoverimg" />
+        </div>
+        <!-- 因為是inline block 要在上面加上text-align:center 或者包一個div用margin 0 auto 或者用flexbox-->
+        </a>
+        <h2>
+            自己人壓榨自己人　菜鳥24小時待命
+        </h2>
+        <p>　電影系畢業的小陳目前待業中，大一跟過第一次「有Pay」的廣告片，他尷尬得笑說：「我就是在打雜。」接著娓娓道來那次跟片經驗。</p>
+        <p>　在劇組擔任職位較低的美術實習生，小陳解釋自己的工作內容是：「幫助美術組長完成任何事情。」工作時間從早上五點到深夜，為時七天，找道具、借還道具、現場布置等都在他的職務範圍內，同時身兼司機，每天拍攝結束後必須送完器材才能下班。拖著疲憊的身體回家，還不能夠好好休息，小陳目光虛無的說：「他（美術組長）跟我說半夜不能不接電話。」在一週的拍攝期間，他被器材砸傷腳，劇組不僅沒給醫藥費，連去醫院的計程車錢都由小陳自付。</p>
+        <p style="font-weight:700;">　一週的辛勞換來多少錢？新台幣1000元。</p>
+        <p>　廣告片的導演來自美國，片期結束後以此廣告獲得資金，得以繼續拍下一部長片。小陳不知道美國導演對美術實習生的處境是否知情，但台灣工作人員藉美術實習生的名義，低價招募助理，無條件延長工時，令他至今仍心有餘悸，小陳說：「我覺得是自己人壓榨自己人。」</p>
+        <p>　小陳遭遇的超時加班其實是業界的潛規則，在電視台工作的張劭庭說：「最長曾到凌晨四點，但班表上寫的不會超過十小時，如果超過他會叫你先打卡。」他每週至少加班一天，公司任意延長工時，卻不需負法律責任，大部份的人選擇忍氣吞聲，最終離職或跳槽。張劭庭以自己所屬的工程部門為例，年資高的上位者多，新人升遷不易，甚至有人工作十年薪資凍漲，階層流動率極低，「制度面滿難改變，尤其你是新人。」</p>
+        <h2>
+            自由接案仰賴人脈　議價空間小淪廉價勞工
+        </h2>
+        <p>　進入影視產業還有另一個選項：成為獨立運作的自由接案者（Freelancer）。</p>
+        <p>　「你可以自己去選擇想要的工作內容。」自由接案者張不乙剛入行４個月，但工資沒有一定標準，每月的收入也未知。另一位自由接案者小李（化名）認為，工作來源缺乏制度，經常要靠運氣接案，「很難靠自主努力得到更多工作。」他坦言，新鮮人除了在校期間累積的人脈，沒有其他明確的管道接案，收入不穩造成「先接到案子就好」的急迫性，導致議價空間縮小，新人的工資難以翻身。</p>
+        <p>　除了工作來源不穩，自由接案最大的風險在於勞動環境無法提供完善的保障。目前已經進入公司擔任剪接師的小劉（化名）回憶起先前擔任助理的經驗，工作超過24小時，「然後燈光師還要開車載器材跟我們回台北。」過勞駕駛若不幸發生車禍，公司不見得能完全理賠，因此在接案簽約時必須格外小心，他提醒：「簽約只算片期長短就很危險。」例如合約上的片期只有一個月，但卻沒有明確規範每一天的工作時數，因此即便每天勞動超過二十小時，仍不違反合約。在台灣，超時工作、過勞司空見慣，對於自由接案者來說，學會在艱困的工作環境中保護自己仍是一大難題。</p>
+        <h2>
+            跳班制少超時　月薪制成勞力吃到飽
+        </h2>
+        <p>　影視產業的計價方式分為三種：跳班制、月薪制，還有按件計酬。其中，跳班制最能夠避免超時。</p>
+        <p>　因為跳班制將開拍後的24小時劃分為八小時、六小時、六小時、四小時共四班，通稱為「8664」，每班工錢固定，但隨工時累計到最後四小時，單位時薪相較第一班八小時高出兩倍，時薪因此相對增加。製作成本高的廣告案拍攝期短，現場勞動為主的攝影組、燈光組、收音組就多以跳班制來計算，為節省成本，製片會抓緊時間，自然少有超時。</p>
+        <p>　但在戲劇或電影的案件中，拍攝期短則一個月、長則數年，每天的工時與工資固定，製片沒有成本壓力，一天的拍攝時間無上限，甚至會出現「簽約吃到飽」的現象。而一日工時長短更與製片、副導息息相關，經驗老道的製片和副導懂得精準掌握預算、時間和人力，以及最佳拍攝時機。反之，經驗不足的團隊最容易出現超時、人力不足、資金短缺的問題。</p>
+
+        <div style="text-align: center">
+            <img src="compare.jpg" class="hoverimg" />
+            <!-- 寬度超過大約840px時 無法顯示全圖 會過大 -->
+        </div>
+        <!-- 因為是inline block 要在上面加上text-align:center 或者包一個div用margin 0 auto 或者用flexbox-->
+        </a>
+
+        <h2>薪資延遲無限期　影視勞動無法可管</h2>
+        <p>　不論是隸屬公司的影視人員，或是自由接案者都適用於上述計價方式。公司通常會簽署合約，所以不至於完全領不到工資，但年輕的自由接案者常礙於人情壓力不簽合約，即使有合約也只能被動簽名，對於合約的內容無法提出意見，因此經常被砍價、拿不到工資。擔任攝影助理的自由接案者拍片人（化名）就遇過製片延遲付款，甚至最後不付款，她說：「就一直說下個月、下個月，無限延期。」直到殺青時還拿不到工資是常有的情況，自由接案者通常得依靠積蓄過上幾個月。</p>
+        <p>　自由接案者的工作模式充滿不穩定因素，同職位的酬勞也高低有別，以製片助理為例，有人只能領基本時薪，出色者則可月入七八萬。現任自由接案美術組的不逃（化名）表示，在影視產業內，個人的能力會直接反映在薪資上，並不是靠年資來加薪，工作十年也不見得能升遷，他說：「你要有本事領這個錢。」而當自由接案者的能力到了一定的水準，便具有足夠的籌碼跟製片談條件、簽合約。</p>
+        <p>　不逃也提到，法律上沒有適用於影視產業的勞動法規，所以他們用自己的方式保護自己人，「我們這一輩的有在想辦法改善老一輩的習慣。」他以美術助理開車為例，過往習慣是要求各組助理也必須開車載送器材，但在工作外時間開車，會耗費助理相當多體力，真正開拍時反而無法專注於工作。因此，他們在上一部片中就由美術總監出面與製片方協商，保證沒有一個劇組成員需要開車，並且聘請司機在一旁等候。工作人員不用開車，多休息一點反而能讓拍攝更加順利。他認為，一開始就應該和製片談清楚人力配置、生活細節和工資報酬，業界的改革其實可以從自己作起，當每個人都拒絕被不當對待，才有可能改變業界的勞動環境。</p>
+
+        <h2>活絡產業　提高本土戲劇自製率</h2>
+        <p>　產業規模小、資金不足和層層剝削，盤根錯節造成台灣影視產業龐大的結構性問題。政治大學廣播電視學系教授陳儒修形容是「關在一個這麼小的空間中，你咬我我咬你。」他認為將規模做大是解決之道，政府可以透過修改《有線廣播電視法》中的戲劇自製率，明確規定節目類型、給予企業投資抵免、減稅優惠等活絡市場。並舉法國政府為例，要求企業必須拍攝電影，且禁止以低成本節目鑽漏洞；而韓國政府也要求國內大企業釋出四成經費製作電影，以現代汽車為例，雖然一開始敷衍了事，但後來發現「拍一部電影賺的錢，比一年賣的車子賺得要多」於是企業相繼投資。</p>
+        <p>　導演李志薔也贊同，曾以《新丁花開》獲金鐘獎八項入圍、三項大獎的李志薔拍電視劇也拍電影，他表示，電影電視人才互相流通、難以劃分，在環環相扣的產業鏈中，擁有最大實權的電視台傾向把問題歸究於國內市場太小、大環境太差。拍攝戲劇花費的時間成本遠高於談話性節目，戲劇一集平均要新台幣200萬元，但3個人的談話性節目只需25萬元，為節省成本電視台往往選擇後者，或直接購買外國戲劇。惡性循環下談話性節目大同小異，戲劇則完全被日、韓、大陸佔據市場。沒有戲劇自製能力，就等於永遠被掐住脖子，李志薔說：「他今天賣你35萬元，也可以賣你135萬元。」如果提升本土戲劇自製率，好的電視人才會往電影流動，再培養新人進電視磨練，如同南韓一樣，連帶電玩、遊戲、音樂，甚至藝人經紀全部受益，就會形成正向循環。</p>
+
+        <h2>落實合約公開均價　改善勞動剝削</h2>
+        <p>　除了提高本土戲劇自製率外，還可以從合約下手，資深燈光師屈弘仁是第一位。</p>
+        <p>　他花十年時間改善基層勞動，推行
+            <a href="http://www.movieu.org/rights/plist/124.html" style="font-weight:bold;color:#d38d8e;cursor: pointer;"
+                target="_blank">合約範本</a>，保障工作人員四大權利：合約、工時、職安、保險。甚至還請來保險精算師，因為以往劇組保旅遊平安險，但意外發生時，保險公司往往以「非旅遊性質」而不全權理賠。屈弘仁坦承，在產業中推勞權，「自然會有陣痛期。」原本一年五部片滿檔，漸漸變成一年一部，甚至兩年一部片。「沒人敢找你，因為你要簽合約、還要限制工時。」但按照仔細簽下的合約履行後，反而沒有一部片延後殺青，屈弘仁自信地說：「表定55天要拍完《失控謊言》，我們41天就殺青。」因為他的超班費價錢高，一個鐘頭要3300元，3小時將近1萬元。</p>
+        <p>　合約範本正式上線後，屈弘仁接下來想要公開均價的低標，改善過往層層收回扣的習慣。他舉例，攝影師向製片報經費時，常將器材費與助理費多報兩成，這兩成的經費放入自己口袋中。上層收回扣，犧牲下層應有的工資，而均價不透明反而成為剝削的原因之一。他表示，「你正大光明打工賺錢，為什麼拿多少錢不能講？」</p>
+        <p>　台北市電影戲劇職業工會總幹事廖浤睿表示，產業結構及製作環境改變，勞動水平跟觀念也要與時俱進。在台北市電影戲劇職業工會網站上，包含編劇、演藝經紀和工作人員都有相對應的合約範本。專案經理廖蕾嘉表示，如果資方違反合約，勞方也能透過勞檢機構的輔導機制，進行協調和溝通，過程完全免費。廖浤睿更指出，在產業中自由接案者眾，製作方也不少，勞方可以合理爭取權利，不需擔心未來沒有接案機會。兩年多的推動下，向工會諮詢合約問題的人數明顯增加，光3月就快十件。廖蕾嘉表示，影視產業問題複雜，但可以從合約開始做起。</p>
+        <p>　「因為拍片不是人生的全部，生活才是。」屈弘仁點出影視勞動者的心聲，隨時代演進，產業結構該因時制宜，勞動現場的共識除了從個人做起，政府更該重視影視產業，活絡市場。而身為無名小卒的你我可以做些什麼？下次看完電影，先別急著走，請仔細看看片尾的工作人員名單，每一位都是推動電影不可或缺的一部份。</p>
+
+
+        <div class="related-reading">相關閱讀</div>
+        <a href="https://stevenmanto.github.io/communication/page2" target="_self" style="text-decoration: none;color:#6D615B">
+            <div class="media related-box">
+                <img class="align-self-center mr-3 related-img" src="money.png" alt="拍片入場券　輔導金的現實面">
+                <div class="media-body">
+                    <h5>拍片入場券　輔導金的現實面</h5>
+                    <div class="related-mobile-font">拍片入場券</div>
+                    <div class="related-mobile-font">輔導金的現實面</div>
+                    <p class="related-font">繼今年1月《52赫茲我愛你》賣出四千萬票房後，3月上映的《目擊者》也在十天內突破兩千萬票房，數字亮麗之外，也是國內近年少見的音樂劇和類型片，這兩部片在去年分別獲得電影輔導金新台幣1500萬元和2000萬元補助。</p>
                 </div>
-            <div class="flex-item">
-            <a target="_blank" href="http://twitter.com/home/?status=報導者 https://www.twreporter.org/">
-                <img title="分享到twitter" src="Twitter.png" width="30px" /></a>
             </div>
-        </div>
-
-    </header>
-
-<article>
-    <header>
-        <h1>夢想燒盡之後 被忽略的影視勞動</h1>
-        <div>
-            <span style="font-size: 18px;color:#6D615B">
-                文／鄭順祥　龐家姍　吳旻蓁　薛若儀　江殷年　顏麗家
-            </span>
-    </header>
-    <div class="intro">
-        <p>打開電視，節目播送的是重播數次的《甄環傳》、《瑯琊榜》，想看最新的韓劇就上愛奇藝或楓林網，即使進電影院，台灣觀眾選擇的不外乎是好萊塢大片，台灣影視產業出了什麼問題？是導演的錯？編劇的錯？還是影視產業血汗勞動造成內容品質低落？超時、低薪，有一頓沒一頓的影視勞動者在台灣險惡的環境中慢慢消磨最初的熱情……</p>
-    </div>
-
-    <a href="crew.jpg" data-toggle="lightbox" class="lightbox-margin">
-        <div>
-            <img src="crew.jpg" class="img-fluid ">
-        </div>
-        <!-- 因為是inline block 要在上面加上text-align:center 或者包一個div用margin 0 auto 或者用flexbox-->
-    </a>
-    <h2>
-        自己人壓榨自己人　菜鳥24小時待命
-    </h2>
-    <p>　電影系畢業的小陳目前待業中，大一跟過第一次「有Pay」的廣告片，他尷尬得笑說：「我就是在打雜。」接著娓娓道來那次跟片經驗。</p>
-    <p>　在劇組擔任職位較低的美術實習生，小陳解釋自己的工作內容是：「幫助美術組長完成任何事情。」工作時間從早上五點到深夜，為時七天，找道具、借還道具、現場布置等都在他的職務範圍內，同時身兼司機，每天拍攝結束後必須送完器材才能下班。拖著疲憊的身體回家，還不能夠好好休息，小陳目光虛無的說：「他（美術組長）跟我說半夜不能不接電話。」在一週的拍攝期間，他被器材砸傷腳，劇組不僅沒給醫藥費，連去醫院的計程車錢都由小陳自付。</p>
-    <p style="font-weight:700;">　一週的辛勞換來多少錢？新台幣1000元。</p>
-    <p>　廣告片的導演來自美國，片期結束後以此廣告獲得資金，得以繼續拍下一部長片。小陳不知道美國導演對美術實習生的處境是否知情，但台灣工作人員藉美術實習生的名義，低價招募助理，無條件延長工時，令他至今仍心有餘悸，小陳說：「我覺得是自己人壓榨自己人。」</p>
-    <p>　小陳遭遇的超時加班其實是業界的潛規則，在電視台工作的張劭庭說：「最長曾到凌晨四點，但班表上寫的不會超過十小時，如果超過他會叫你先打卡。」他每週至少加班一天，公司任意延長工時，卻不需負法律責任，大部份的人選擇忍氣吞聲，最終離職或跳槽。張劭庭以自己所屬的工程部門為例，年資高的上位者多，新人升遷不易，甚至有人工作十年薪資凍漲，階層流動率極低，「制度面滿難改變，尤其你是新人。」</p>
-    <h2>
-        自由接案仰賴人脈　議價空間小淪廉價勞工
-    </h2>
-    <p>　進入影視產業還有另一個選項：成為獨立運作的自由接案者（Freelancer）。</p>
-    <p>　「你可以自己去選擇想要的工作內容。」自由接案者張不乙剛入行４個月，但工資沒有一定標準，每月的收入也未知。另一位自由接案者小李（化名）認為，工作來源缺乏制度，經常要靠運氣接案，「很難靠自主努力得到更多工作。」他坦言，新鮮人除了在校期間累積的人脈，沒有其他明確的管道接案，收入不穩造成「先接到案子就好」的急迫性，導致議價空間縮小，新人的工資難以翻身。</p>
-    <p>　除了工作來源不穩，自由接案最大的風險在於勞動環境無法提供完善的保障。目前已經進入公司擔任剪接師的小劉（化名）回憶起先前擔任助理的經驗，工作超過24小時，「然後燈光師還要開車載器材跟我們回台北。」過勞駕駛若不幸發生車禍，公司不見得能完全理賠，因此在接案簽約時必須格外小心，他提醒：「簽約只算片期長短就很危險。」例如合約上的片期只有一個月，但卻沒有明確規範每一天的工作時數，因此即便每天勞動超過二十小時，仍不違反合約。在台灣，超時工作、過勞司空見慣，對於自由接案者來說，學會在艱困的工作環境中保護自己仍是一大難題。</p>
-    <h2>
-        跳班制少超時　月薪制成勞力吃到飽
-    </h2>
-    <p>　影視產業的計價方式分為三種：跳班制、月薪制，還有按件計酬。其中，跳班制最能夠避免超時。</p>
-    <p>　因為跳班制將開拍後的24小時劃分為八小時、六小時、六小時、四小時共四班，通稱為「8664」，每班工錢固定，但隨工時累計到最後四小時，單位時薪相較第一班八小時高出兩倍，時薪因此相對增加。製作成本高的廣告案拍攝期短，現場勞動為主的攝影組、燈光組、收音組就多以跳班制來計算，為節省成本，製片會抓緊時間，自然少有超時。</p>
-    <p>　但在戲劇或電影的案件中，拍攝期短則一個月、長則數年，每天的工時與工資固定，製片沒有成本壓力，一天的拍攝時間無上限，甚至會出現「簽約吃到飽」的現象。而一日工時長短更與製片、副導息息相關，經驗老道的製片和副導懂得精準掌握預算、時間和人力，以及最佳拍攝時機。反之，經驗不足的團隊最容易出現超時、人力不足、資金短缺的問題。</p>
-
-    <a href="compare.jpg" data-toggle="lightbox" class="lightbox-margin">
-        <div>
-            <img src="compare.jpg" class="img-fluid "> <!-- 寬度超過大約840px時 無法顯示全圖 會過大 -->
-        </div>
-        <!-- 因為是inline block 要在上面加上text-align:center 或者包一個div用margin 0 auto 或者用flexbox-->
-    </a>
-
-    <h2>薪資延遲無限期　影視勞動無法可管</h2>
-    <p>　不論是隸屬公司的影視人員，或是自由接案者都適用於上述計價方式。公司通常會簽署合約，所以不至於完全領不到工資，但年輕的自由接案者常礙於人情壓力不簽合約，即使有合約也只能被動簽名，對於合約的內容無法提出意見，因此經常被砍價、拿不到工資。擔任攝影助理的自由接案者拍片人（化名）就遇過製片延遲付款，甚至最後不付款，她說：「就一直說下個月、下個月，無限延期。」直到殺青時還拿不到工資是常有的情況，自由接案者通常得依靠積蓄過上幾個月。</p>
-    <p>　自由接案者的工作模式充滿不穩定因素，同職位的酬勞也高低有別，以製片助理為例，有人只能領基本時薪，出色者則可月入七八萬。現任自由接案美術組的不逃（化名）表示，在影視產業內，個人的能力會直接反映在薪資上，並不是靠年資來加薪，工作十年也不見得能升遷，他說：「你要有本事領這個錢。」而當自由接案者的能力到了一定的水準，便具有足夠的籌碼跟製片談條件、簽合約。</p>
-    <p>　不逃也提到，法律上沒有適用於影視產業的勞動法規，所以他們用自己的方式保護自己人，「我們這一輩的有在想辦法改善老一輩的習慣。」他以美術助理開車為例，過往習慣是要求各組助理也必須開車載送器材，但在工作外時間開車，會耗費助理相當多體力，真正開拍時反而無法專注於工作。因此，他們在上一部片中就由美術總監出面與製片方協商，保證沒有一個劇組成員需要開車，並且聘請司機在一旁等候。工作人員不用開車，多休息一點反而能讓拍攝更加順利。他認為，一開始就應該和製片談清楚人力配置、生活細節和工資報酬，業界的改革其實可以從自己作起，當每個人都拒絕被不當對待，才有可能改變業界的勞動環境。</p>
-    
-    <h2>活絡產業　提高本土戲劇自製率</h2>
-    <p>　產業規模小、資金不足和層層剝削，盤根錯節造成台灣影視產業龐大的結構性問題。政治大學廣播電視學系教授陳儒修形容是「關在一個這麼小的空間中，你咬我我咬你。」他認為將規模做大是解決之道，政府可以透過修改《有線廣播電視法》中的戲劇自製率，明確規定節目類型、給予企業投資抵免、減稅優惠等活絡市場。並舉法國政府為例，要求企業必須拍攝電影，且禁止以低成本節目鑽漏洞；而韓國政府也要求國內大企業釋出四成經費製作電影，以現代汽車為例，雖然一開始敷衍了事，但後來發現「拍一部電影賺的錢，比一年賣的車子賺得要多」於是企業相繼投資。</p>
-    <p>　導演李志薔也贊同，曾以《新丁花開》獲金鐘獎八項入圍、三項大獎的李志薔拍電視劇也拍電影，他表示，電影電視人才互相流通、難以劃分，在環環相扣的產業鏈中，擁有最大實權的電視台傾向把問題歸究於國內市場太小、大環境太差。拍攝戲劇花費的時間成本遠高於談話性節目，戲劇一集平均要新台幣200萬元，但3個人的談話性節目只需25萬元，為節省成本電視台往往選擇後者，或直接購買外國戲劇。惡性循環下談話性節目大同小異，戲劇則完全被日、韓、大陸佔據市場。沒有戲劇自製能力，就等於永遠被掐住脖子，李志薔說：「他今天賣你35萬元，也可以賣你135萬元。」如果提升本土戲劇自製率，好的電視人才會往電影流動，再培養新人進電視磨練，如同南韓一樣，連帶電玩、遊戲、音樂，甚至藝人經紀全部受益，就會形成正向循環。</p>
-    
-    <h2>落實合約公開均價　改善勞動剝削</h2>
-    <p>　除了提高本土戲劇自製率外，還可以從合約下手，資深燈光師屈弘仁是第一位。</p>
-    <p>　他花十年時間改善基層勞動，推行<a href="http://www.movieu.org/rights/plist/124.html" style="font-weight:bold;color:#d38d8e;cursor: pointer;" target="_blank">合約範本</a>，保障工作人員四大權利：合約、工時、職安、保險。甚至還請來保險精算師，因為以往劇組保旅遊平安險，但意外發生時，保險公司往往以「非旅遊性質」而不全權理賠。屈弘仁坦承，在產業中推勞權，「自然會有陣痛期。」原本一年五部片滿檔，漸漸變成一年一部，甚至兩年一部片。「沒人敢找你，因為你要簽合約、還要限制工時。」但按照仔細簽下的合約履行後，反而沒有一部片延後殺青，屈弘仁自信地說：「表定55天要拍完《失控謊言》，我們41天就殺青。」因為他的超班費價錢高，一個鐘頭要3300元，3小時將近1萬元。</p>
-    <p>　合約範本正式上線後，屈弘仁接下來想要公開均價的低標，改善過往層層收回扣的習慣。他舉例，攝影師向製片報經費時，常將器材費與助理費多報兩成，這兩成的經費放入自己口袋中。上層收回扣，犧牲下層應有的工資，而均價不透明反而成為剝削的原因之一。他表示，「你正大光明打工賺錢，為什麼拿多少錢不能講？」</p>
-    <p>　台北市電影戲劇職業工會總幹事廖浤睿表示，產業結構及製作環境改變，勞動水平跟觀念也要與時俱進。在台北市電影戲劇職業工會網站上，包含編劇、演藝經紀和工作人員都有相對應的合約範本。專案經理廖蕾嘉表示，如果資方違反合約，勞方也能透過勞檢機構的輔導機制，進行協調和溝通，過程完全免費。廖浤睿更指出，在產業中自由接案者眾，製作方也不少，勞方可以合理爭取權利，不需擔心未來沒有接案機會。兩年多的推動下，向工會諮詢合約問題的人數明顯增加，光3月就快十件。廖蕾嘉表示，影視產業問題複雜，但可以從合約開始做起。</p>
-    <p>　「因為拍片不是人生的全部，生活才是。」屈弘仁點出影視勞動者的心聲，隨時代演進，產業結構該因時制宜，勞動現場的共識除了從個人做起，政府更該重視影視產業，活絡市場。而身為無名小卒的你我可以做些什麼？下次看完電影，先別急著走，請仔細看看片尾的工作人員名單，每一位都是推動電影不可或缺的一部份。</p>
-
-   
-    <h5 style="text-align: center;margin-top:20px;">相關閱讀</h5>  
-    <div class="media related-box">
-        <img class="align-self-center mr-3 related-img" src="money.png" alt="拍片入場券　輔導金的現實面">
-        <div class="media-body">
-            <h5 class="mt-0">拍片入場券　輔導金的現實面</h5>
-        </div>
-    </div>
-
-    <div class="media related-box">
-        <img class="align-self-center mr-3 related-img" src="numbers.jpg" alt="數位時代求生存　影視科系的專業與焦慮" >
-        <div class="media-body">
-            <h5 class="mt-0">數位時代求生存　影視科系的專業與焦慮</h5>
-        </div>
-    </div>
+        </a>
+        <a href="https://stevenmanto.github.io/communication/page3" target="_self" style="text-decoration: none;color:#6D615B">
+            <div class="media related-box">
+                <img class="align-self-center mr-3 related-img" src="numbers.jpg" alt="數位時代求生存　影視科系的專業與焦慮">
+                <div class="media-body">
+                    <h5>數位時代求生存　影視科系的專業與焦慮</h5>
+                    <div class="related-mobile-font">數位時代求生存</div>
+                    <div class="related-mobile-font">影視科技的專業與焦慮</div>
+                    <p class="related-font">「系上學到的東西很少，80%是自己發展興趣。」 影視科系學生都有著相同心境，覺得學校教育不足、缺乏實作，再加上資訊網路的蓬勃，人人都能學習攝影、剪接、調光，影視相關科系學生的優勢不再。這使得即將入行的學生們擔憂，大學四年的學習，到底替未來想從事的工作打下多少基礎？</p>
+                </div>
+            </div>
+        </a>
 
 
-   
-</article>
 
-<footer>
+    </article>
+
+    <footer>
         <div class="flex-footer">
-            <div class="footer-item">
-                <img src="info.png" width="50px"></img>
-                <div>關於我們</div>
-            </div>
-            <div class="footer-item">
-                <img src="phone-book.png" width="50px"></img>
-                <div>聯絡我們</div>
-            </div>
+            <a href="https://stevenmanto.github.io/communication/aboutus" target="_self" style="text-decoration: none;color:black">
+                <div class="footer-item">
+                    <img src="info.png" width="50px"></img>
+                    <div>關於我們</div>
+                </div>
+            </a>
+            <a href="https://stevenmanto.github.io/communication/contact" target="_self" style="text-decoration: none;color:black">
+                <div class="footer-item">
+                    <img src="phone-book.png" width="50px"></img>
+                    <div>聯絡我們</div>
+                </div>
+            </a>
 
         </div>
     </footer>
 </body>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
-<script>
-$(document).on('click', '[data-toggle="lightbox"]', function (event) {
-    event.preventDefault();
-    $(this).ekkoLightbox();
-});
+    crossorigin="anonymous"></script>
 
-</script>
 </html>

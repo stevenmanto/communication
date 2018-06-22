@@ -4,7 +4,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
+    <meta property="og:title" content="拍片入場券　輔導金的現實面" />
+
+    <meta property="og:description" content="繼今年1月《52赫茲我愛你》賣出四千萬票房後，3月上映的《目擊者》也在十天內突破兩千萬票房，數字亮麗之外，也是國內近年少見的音樂劇和類型片，這兩部片在去年分別獲得電影輔導金新台幣1500萬元和2000萬元補助。" />
+
+    <meta property="og:url" content="https://stevenmanto.github.io/communication/page2" />
+
+    <meta property="og:image" content="https://stevenmanto.github.io/communication/money.png" />
+
+    <meta property="og:type" content="website" />
+    <link href="https://stevenmanto.github.io/communication/logo.png" rel="shortcut icon" />
 </head>
 <style>
     article {
@@ -68,15 +77,52 @@
     .flex-container {
         display: flex;
         margin: auto;
-        width: 280px;
+        width: 300px;
         justify-content: space-around;
     }
 
-    .flex-item {
+    .flex-item1 {
+        font-weight: bold;
+        font-size: 28px;
+        margin: auto;
+        cursor: pointer;
+
+    }
+
+    .flex-item2 {
         font-weight: bold;
         font-size: 28px;
         margin: auto;
         cursor: default;
+        text-align: center
+    }
+
+    .flex-item3 {
+        font-weight: bold;
+        font-size: 28px;
+        margin: auto;
+
+        text-align: center
+    }
+
+    .flex-item4 {
+        font-weight: bold;
+        font-size: 28px;
+        margin: auto;
+
+        text-align: center
+    }
+
+    .flex-item1:hover {
+        opacity: 0.5;
+    }
+
+    .flex-item3:hover {
+        opacity: 0.5;
+    }
+
+    .flex-item4:hover {
+        opacity: 0.5;
     }
 
     .flex-footer {
@@ -93,6 +139,10 @@
         margin-bottom: 50px;
     }
 
+    .footer-item:hover {
+        opacity: 0.5;
+    }
+
     footer {
         min-width: 80px;
         margin-top: 40px;
@@ -103,6 +153,7 @@
         background-color: #9FAA8F;
         margin-bottom: 20px;
     }
+
     .related-box {
         width: 80%;
         margin: 40px auto 0 auto;
@@ -118,11 +169,34 @@
     .related-img {
         width: 30%
     }
-    @media screen and (max-width: 768px) {
+
+    .hoverimg {
+        width: 100%
+    }
+
+    .related-mobile-font {
+        font-size: 18px;
+        font-weight: 700;
+        color: #6D615B
+    }
+    .related-reading{
+        text-align: center;
+        margin-top:40px;
+        font-size: 18px;
+        font-weight: 700;
+        color: #6D615B
+    }
+
+    @media screen and (max-width: 767px) {
         .flex-footer {
             width: 200px;
         }
-
+        .related-font {
+            display: none;
+        }
+        h5 {
+            display: none;
+        }
 
     }
 
@@ -137,6 +211,26 @@
         .related-img {
             width: 20%
         }
+        .flex-container {
+            width: 600px;
+        }
+        .flex-item1 {
+            width: 100px;
+        }
+        .flex-item2 {
+            width: 400px;
+            letter-spacing: 1.5
+        }
+        .hoverimg {
+            width: 80%
+        }
+        .related-font {
+            font-size: 16px;
+        }
+        .related-mobile-font {
+            display: none;
+        }
+
     }
 
     @media screen and (min-width:1024px) {
@@ -150,25 +244,45 @@
         .related-img {
             width: 10%
         }
+        .flex-container {
+            width: 600px;
+        }
+        .flex-item1 {
+            width: 100px;
+        }
+        .flex-item2 {
+            width: 400px;
+            letter-spacing: 2
+        }
+        .hoverimg {
+            width: 60%
+        }
+        .hoverimg:hover {
+            width: 90%
+        }
+        .related-mobile-font {
+            display: none;
+        }
     }
 </style>
 
 <body style="font-family: Microsoft JhengHei, Noto Sans TC, PingFang TC,Apple LiGothic Medium">
     <header>
         <div class="flex-container">
-            <div class="flex-item">
-                <img title="回首頁"src="logo.png" width="50px"></img>
+            <div class="flex-item1">
+                <img title="回首頁" src="logo.png" width="50px"></img>
             </div>
 
-            <div class="flex-item"> 我們畢業啦！</div>
-            <div class="flex-item">
-                <a href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent('https://www.twreporter.org/'))));">
+            <div class="flex-item2"> 影視系列專題</div>
+            <div class="flex-item3">
+                <a href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent('https://stevenmanto.github.io/communication/page2'))));">
                     <img title="分享到Facebook" src="fb.png" width="30px" />
                 </a>
-                </div>
-            <div class="flex-item">
-            <a target="_blank" href="http://twitter.com/home/?status=報導者 https://www.twreporter.org/">
-                <img title="分享到twitter" src="Twitter.png" width="30px" /></a>
+            </div>
+            <div class="flex-item4">
+                <a target="_blank" href="http://twitter.com/home/?status=拍片入場券　輔導金的現實面 https://stevenmanto.github.io/communication/page2">
+                    <img title="分享到twitter" src="Twitter.png" width="30px" />
+                </a>
             </div>
         </div>
 
@@ -190,33 +304,35 @@
         <p>　1980年代，隨著外匯管制的開放，外片投資及進口逐漸增加。新聞局在1986年取消外片配額，造成外片大量進口，國內電影不景氣，製作公司及戲院相繼倒閉。1990年政府開始發放電影輔導金補助電影產業；然而，1990年代好萊塢大量輸出至全球，不只影響台灣觀眾口味，更占據廣大票房收入，台灣電影雖有侯孝賢、楊德昌等人才輩出，市場仍由外片主導。以1994年為例，外片市場的票房總佔有率高達88%。</p>
         <p>　1996年後，國片年產量更下降至20部以內、市占率僅1～2％。2002年加入世界貿易組織（World Trade Organization, WTO）後，陸續取消外片輸入拷貝數限制、映演場所數限制、向進口片徵收國片輔導金，更刪除國片映演比例等保護政策，外片可以無上限的大舉進攻台灣市場，使原本已經積弱不振的台灣電影更加不堪一擊。國片票房不佳，投資必然縮手，籌措拍攝資金更加困難。目前中央及地方政府均提供資金補助，成為有志拍片者極力爭取的第一桶金。</p>
 
-        <a href="money.png" data-toggle="lightbox" class="lightbox-margin">
-            <div>
-                <img src="money.png" class="img-fluid ">
-            </div>
-            <!-- 因為是inline block 要在上面加上text-align:center 或者包一個div用margin 0 auto 或者用flexbox-->
-        </a>
+
+        <div style="text-align: center">
+            <img src="money.png" class="hoverimg ">
+        </div>
+        <!-- 因為是inline block 要在上面加上text-align:center 或者包一個div用margin 0 auto 或者用flexbox-->
+
 
         <h2>縣市補助促觀光　中央輔導金著眼產業發展</h2>
         <p>　電影輔導金屬於中央層級，由文化部影視及流行音樂產業局發放，分為長片、短片輔導金。從1990年開始發放，從一年1200萬元逐漸增加，2014年後每年約發出兩億的輔導金。縣市政府也提供類似的影視補助來提升城市能見度、促進觀光；限定需以在地為主題，或是要求當地景點要有一定比例的曝光度，澎湖就明文規定在本縣取景之部分，不得少於影片總長度之四分之一。
             2011年起，台北市政府文化局每年兩期補助金額共新台幣2500萬元，每一部片有150萬至400萬經費不等。台中市一樣一年補助兩期，也會給名導特別優待，例如2011年補助李安《少年 PI 的奇幻漂流》5900萬元。從2004年至2016年，台中市共發出超過2億的補助金，比台北市多出約兩千萬元。</p>
-        <p>　各縣市政府意在行銷在地，中央的輔導金的用意則在拯救影視產業；中央發放的輔導金不限劇種（註）、主題，評審重點著重在鼓勵有開創性、多元的劇本。就申請上限而言，台中市一部片最高上限給予1000萬元補助；中央文化部的輔導金新人組上限為1500萬元，多元組及一般組甚至可以拿到3000萬元。 相較之下，輔導金不限劇種、不限主題，且具鼓勵性質，評審重點在有開創性、多元的劇本。
-        <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+        <p>　各縣市政府意在行銷在地，中央的輔導金的用意則在拯救影視產業；中央發放的輔導金不限劇種（註）、主題，評審重點著重在鼓勵有開創性、多元的劇本。就申請上限而言，台中市一部片最高上限給予1000萬元補助；中央文化部的輔導金新人組上限為1500萬元，多元組及一般組甚至可以拿到3000萬元。
+            相較之下，輔導金不限劇種、不限主題，且具鼓勵性質，評審重點在有開創性、多元的劇本。
+            <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
                 註
             </a>
             <!--如何讓按鈕好看一點QAQ，然後讓他不是一個block，讓文章可以接下去，且讓接下去的字可以吃到上面的style-->
             <div class="collapse" id="collapseExample">
                 <div class="card card-body">
                     輔導金不限任何劇種皆可申請，依照申請者自行認定。另外，紀錄片由於產業結構的差異，因此另外設立紀錄片製作補助要點。 </div>
-            </div></p>
-        
-
-        <a href="max.png" data-toggle="lightbox" class="lightbox-margin">
-            <div>
-                <img src="max.png" class="img-fluid">
             </div>
-            <!-- 因為是inline block 要在上面加上text-align:center 或者包一個div用margin 0 auto 或者用flexbox-->
-        </a>
+        </p>
+
+
+
+        <div style="text-align: center">
+            <img src="max.png" class="hoverimg">
+        </div>
+        <!-- 因為是inline block 要在上面加上text-align:center 或者包一個div用margin 0 auto 或者用flexbox-->
+
 
         <p>　「所有新拍片的導演都會申請輔導金。」導演李中曾以自己的第一部長片代表作《青田街一號》成功申請輔導金一般組1500萬元的補助。他肯定輔導金制度對新導演的友善，相較其他亞洲國家，台灣是相對用較大筆金額補助拍片的國家。李中認為輔導金不只給予導演機會，更提高了拍片成功的機率。導演李志薔指出也提到，輔導金是台灣許多創作型導演的出路，亦可減輕他們的籌資負擔。</p>
         <p>　許多新人導演即使有好劇本也等不到資金，但若有了輔導金加持，就能吸引投資，電影輔導金似乎成為一張影壇入場券。</p>
@@ -239,35 +355,47 @@
         <h2>補助還是投資？　應規劃多元基金來源</h2>
         <p>　現行的電影輔導金提供「補助」功能，創作者領取補助後，僅需對剩下的自籌款項負責。然而若要電影基金能夠長久運作，將輔導金的概念轉為「投資」或許是可行的方式。「因為現在普遍都會認為1000萬是國家給我的錢，就好像認為不用付政府那1000萬的責任，也許政府改成投資，而非補助或許是一個比較好的方法。」鄭秉泓認為輔導金改成國家投資的形式，不論最後是賺是賠，都要還給國家固定的金額。高雄市文化局現行電影輔助金便分為「投資」及「補助」兩項目，獲准「投資」的創作者在開拍前便能請領全額資金，並在上映後逐步收回投注成本，這樣除了能有效維持基金穩定運作外，由於資金來自高雄市文化基金會，便不會產生因票房不佳而損失人民公帑的問題。</p>
         <p>　「實際上是不是有差異？」政大新聞系教授馮建三指出，「這是補助比例的問題，不是在形式。」他認為拍片本來就需承擔較高風險，比起用補助或是投資的形式，投注金額實際上佔整體製作費用的比例多寡更接近問題核心，「其實輔導金的問題在於整個總額太小。」馮建三認為政府應主動制定長遠的政策鼓勵國片發展。胡仲光也指出，除了輔導金之外仍有許多可行的政策，例如在每個人進戲院看電影時做政策補貼，吸引人看國片、或是從電影票中抽出固定金額當作基金，或許能提供更為正向的循環。</p>
-        <h5 style="text-align: center;margin-top:20px;">相關閱讀</h5>  
-        <div class="media related-box">
-            <img class="align-self-center mr-3 related-img" src="compare.jpg" alt="夢想燒盡之後　被忽略的影視勞動">
-            <div class="media-body">
-                <h5 class="mt-0;">夢想燒盡之後　被忽略的影視勞動</h5>
-            </div>
-        </div>
+        <div class="related-reading">相關閱讀</div>
 
-       
-
-        <div class="media related-box">
-            <img class="align-self-center mr-3 related-img" src="numbers.jpg" alt="數位時代求生存　影視科系的專業與焦慮" >
-            <div class="media-body">
-                <h5 class="mt-0">數位時代求生存　影視科系的專業與焦慮</h5>
+        <a href="https://stevenmanto.github.io/communication/page1" target="_self" style="text-decoration: none;color:#6D615B">
+            <div class="media related-box">
+                <img class="align-self-center mr-3 related-img" src="crew.jpg" alt="夢想燒盡之後　被忽略的影視勞動">
+                <div class="media-body">
+                    <h5>夢想燒盡之後　被忽略的影視勞動</h5>
+                    <div class="related-mobile-font">夢想燒盡之後</div>
+                    <div class="related-mobile-font">被忽略的影視勞動</div>
+                    <p class="related-font">打開電視，節目播送的是重播數次的《甄環傳》、《瑯琊榜》，想看最新的韓劇就上愛奇藝或楓林網，即使進電影院，台灣觀眾選擇的不外乎是好萊塢大片，台灣影視產業出了什麼問題？</p>
+                </div>
             </div>
-        </div>
+        </a>
+        <a href="https://stevenmanto.github.io/communication/page3" target="_self" style="text-decoration: none;color:#6D615B">
+            <div class="media related-box">
+                <img class="align-self-center mr-3 related-img" src="numbers.jpg" alt="數位時代求生存　影視科系的專業與焦慮">
+                <div class="media-body">
+                    <h5>數位時代求生存　影視科系的專業與焦慮</h5>
+                    <div class="related-mobile-font">數位時代求生存</div>
+                    <div class="related-mobile-font">影視科技的專業與焦慮</div>
+                    <p class="related-font">「系上學到的東西很少，80%是自己發展興趣。」 影視科系學生都有著相同心境，覺得學校教育不足、缺乏實作，再加上資訊網路的蓬勃，人人都能學習攝影、剪接、調光，影視相關科系學生的優勢不再。這使得即將入行的學生們擔憂，大學四年的學習，到底替未來想從事的工作打下多少基礎？</p>
+                </div>
+            </div>
+        </a>
 
 
     </article>
     <footer>
         <div class="flex-footer">
-            <div class="footer-item">
-                <img src="info.png" width="50px"></img>
-                <div>關於我們</div>
-            </div>
-            <div class="footer-item">
-                <img src="phone-book.png" width="50px"></img>
-                <div>聯絡我們</div>
-            </div>
+            <a href="https://stevenmanto.github.io/communication/aboutus" target="_self" style="text-decoration: none;color:black">
+                <div class="footer-item">
+                    <img src="info.png" width="50px"></img>
+                    <div>關於我們</div>
+                </div>
+            </a>
+            <a href="https://stevenmanto.github.io/communication/contact" target="_self" style="text-decoration: none;color:black">
+                <div class="footer-item">
+                    <img src="phone-book.png" width="50px"></img>
+                    <div>聯絡我們</div>
+                </div>
+            </a>
 
         </div>
     </footer>
@@ -278,12 +406,6 @@
     crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
-<script>
-    $(document).on('click', '[data-toggle="lightbox"]', function (event) {
-        event.preventDefault();
-        $(this).ekkoLightbox();
-    });
 
 
 </script>
