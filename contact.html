@@ -6,11 +6,11 @@
         crossorigin="anonymous">
 
 
-    <meta property="og:title" content="我們畢業了！" />
+    <meta property="og:title" content="聯絡我們" />
 
-    <meta property="og:description" content="首屆政大傳院大一大二不分系畢業了！這些學生以及老師們對系上這四年來有什麼想法呢？本專案將帶您一探究竟！" />
+    <meta property="og:description" content="Here's my address, so mail me maybe." />
 
-    <meta property="og:url" content="https://stevenmanto.github.io/communication/home" />
+    <meta property="og:url" content="https://stevenmanto.github.io/communication/contact" />
 
     <meta property="og:image" content="https://stevenmanto.github.io/communication/logo.png" />
 
@@ -26,7 +26,7 @@
         margin-right: 20px;
     }
 
-    article>header>h1 {
+    article>h1 {
         font-size: 36px;
         font-weight: 700;
         color: #6D615B;
@@ -163,50 +163,29 @@
 
     body>header {
         background-color: #F2DCBA;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
+    }
+
+    .image-block {
+        display: flex;
+        margin: auto;
+        justify-content: space-around;
+        flex-wrap: wrap;
     }
 
     .image {
-        width: 100%
-    }
-
-
-    .related-box1 {
-        width: 80%;
-        margin: 40px auto 0 auto;
-        padding: 20px;
-        background-color: #92AFB5;
+        text-align: center;
+        width: 250px;
+        margin-top: 20px;
+        margin-bottom: 20px;
 
     }
 
-    .related-box1:hover {
-        background-color: white;
-        cursor: pointer;
-    }
+    .button-font {
+        font-size: 16px;
+        font-weight: 500;
+        color: #6D615B;
 
-    .related-box2 {
-        width: 80%;
-        margin: 40px auto 0 auto;
-        padding: 20px;
-        background-color: #D38D8E;
-
-    }
-
-    .related-box2:hover {
-        background-color: white;
-        cursor: pointer;
-    }
-
-    .related-box3 {
-        width: 80%;
-        margin: 40px auto 0 auto;
-        padding: 20px;
-        background-color: #9FAA8F;
-    }
-
-    .related-box3:hover {
-        background-color: white;
-        cursor: pointer;
     }
 
 
@@ -214,7 +193,10 @@
         .flex-footer {
             width: 200px;
         }
-
+        article>h1 {
+            font-size: 20px;
+            padding: 0 60 0 60;
+        }
 
     }
 
@@ -226,17 +208,9 @@
             margin-left: 80px;
             margin-right: 80px;
         }
-        .image {
-            width: 80%;
-        }
-
-        .related-box1,
-        .related-box2,
-        .related-box3 {
-            width: 70%
-        }
-        .intro {
-            width: 70%
+        article>h1 {
+            font-size: 28px;
+            text-align: center;
         }
         .flex-container {
             width: 600px;
@@ -248,7 +222,17 @@
             width: 400px;
             letter-spacing: 1.5
         }
+        .image {
+            text-align: center;
+            width: 200px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+
+        }
+
+
     }
+
 
     @media screen and (min-width:1024px) {
         .flex-footer {
@@ -258,16 +242,8 @@
             margin-left: 200px;
             margin-right: 200px;
         }
-        .image {
-            width: 60%;
-        }
-        .intro {
-            width: 50%
-        }
-        .related-box1,
-        .related-box2,
-        .related-box3 {
-            width: 50%
+        article>h1 {
+            text-align: center
         }
         .flex-container {
             width: 600px;
@@ -279,6 +255,7 @@
             width: 400px;
             letter-spacing: 2
         }
+
     }
 </style>
 <!--為什麼share button會是報導者啦XD-->
@@ -286,18 +263,20 @@
 <body style="font-family: Microsoft JhengHei, Noto Sans TC, PingFang TC,Apple LiGothic Medium">
     <header>
         <div class="flex-container">
-            <div class="flex-item1">
-                <img title="回首頁" src="logo.png" width="50px"></img>
-            </div>
+            <a href="https://stevenmanto.github.io/communication/home" target="_self">
+                <div class="flex-item1">
+                    <img title="回首頁" src="logo.png" width="50px"></img>
+                </div>
+            </a>
 
-            <div class="flex-item2"> 我們畢業啦！</div>
+            <div class="flex-item2">網站欸限時批</div>
             <div class="flex-item3">
-                <a href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent('https://stevenmanto.github.io/communication/home'))));">
+                <a href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent('https://stevenmanto.github.io/communication/contact'))));">
                     <img title="分享到Facebook" src="fb.png" width="30px" />
                 </a>
             </div>
             <div class="flex-item4">
-                <a target="_blank" href="http://twitter.com/home/?status=首屆政大傳院大一大二不分系畢業了! https://stevenmanto.github.io/communication/home">
+                <a target="_blank" href="http://twitter.com/home/?status=首屆大一大二不分系畢業了！有任何建議歡迎聯絡六六六製作團隊！ https://stevenmanto.github.io/communication/contact">
                     <img title="分享到twitter" src="Twitter.png" width="30px" />
                 </a>
             </div>
@@ -307,9 +286,130 @@
 
     <article>
 
+        <h1>點擊頭像就可以傳email給你想寄信的對象囉！</h1>
 
+        <div class="image-block">
+
+            <a href="mailto:jennifer91037@gmail.com ?subject=【新聞網站來信】" target="_blank">
+                <div class="image">
+                    <img title="旻蓁：你確定？" src="wu_circle.png" width="150px" />
+                </div>
+            </a>
+            <a href="mailto:105405184@nccu.edu.tw ?subject=【新聞網站來信】" target="_blank">
+                <div class="image">
+                    <img title="韻如：選我嗎？" src="ru_circle.png" width="150px" />
+                </div>
+            </a>
+
+            <a href="mailto:jessepom54@gmail.com ?subject=【新聞網站來信】" target="_blank">
+                <div class="image">
+                    <img title="家姍：想幹嘛？" src="shan_circle.png" width="150px" />
+                </div>
+            </a>
+            <a href="mailto:103207346@mail2.nccu.tw ?subject=【新聞網站來信】" target="_blank">
+                <div class="image">
+                    <img title="young吉：聊天嗎？" src="young_circle.png" width="150px" />
+                </div>
+            </a>
+            <a href="mailto:tnfsh11340forever@gmail.com ?subject=【新聞網站來信】" target="_blank">
+                <div class="image">
+                    <img title="鄭順：無聊嗎？" src="shun_circle.png" width="150px" />
+                </div>
+            </a>
+            <a href="mailto:jennifer91037@gmail.com,105405184@nccu.edu.tw,jessepom54@gmail.com,103207346@mail2.nccu.tw,tnfsh11340forever@gmail.com ?subject=【新聞網站來信】"
+                target="_blank">
+                <div class="image">
+                    <img title="六六六：全部都寄嗎？" src="logo_circle.png" width="150px" />
+                </div>
+            </a>
+        </div>
+
+        <p>
+
+            <div style="text-align:center">
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false"
+                    aria-controls="collapseExample">
+                    按頭像沒辦法寄信！
+                </button>
+            </div>
+        </p>
+
+        <div class="collapse" id="collapseExample">
+            <div class="card card-body button-font">
+                <div style="margin-bottom:10px;">抱歉由於我們的技術尚不純熟，僅有能力處理嵌入mailto的功能，您可以嘗試將gmail設置為您的預設寄信軟體，或是點擊下方「我想直接看大家的e-mail」進行複製，造成您的不便，敬請見諒。</div>
+                <ul>
+                    <li>
+                        <a href="https://support.apple.com/zh-tw/HT201607" target="_blank" style="text-decoration: none;font-weight: bold;color:#D38D8E ;">mac的設定</a>
+                    </li>
+                    <li>
+                        <div style="margin-top:20px;margin-bottom:10px;">Windows預設寄信軟體不是google chrome時：</div>
+                        <div style="margin-bottom:20px;">控制台 → 程式集 → 預設程式 → 設定您的預設程式 → 電子郵件 → 選擇「Google Chome」</div>
+                    </li>
+                    <li>
+                        <div style="margin-bottom:10px;">Windows預設寄信軟體雖是google chrome，但無法寄信時：</div>
+                        <div style="margin-bottom:10px;">開啟google chrome → 點擊右上方三個點並點選「設定」 → 滑動至頁面點選下方「進階」 → 於「隱私權與安全性」中點選「內容設定」 → 點選「處理常式」 → 勾選「允許網站要求成為通訊協定的預設處理常式」
+                            → 設定後開啟gmail → 點選網址欄底部的雙箭號圖案（與處理常式的圖案相同) → 點選「允許」後，即可透過點選圖片進行寄信。
+                        </div>
+                        <div>若未出現處理常式的圖案時，可將瀏覽器關閉重啟，並重新點入gmail進行設定。</div>
+                    </li>
+                    <li>
+                        <div style="margin-top:20px;margin-bottom:10px;">若您使用手機時：</div>
+                        <div>抱歉我們無能為力。</div>
+                    </li>
+                </ul>
+            </div>
+            <p>
+        </div>
+        <div style="text-align:center; margin-top:40px;">
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                我想直接看大家的E-mail！
+            </button>
+        </div>
+        </p>
+        <div class="collapse" id="collapse2">
+            <div class="card card-body button-font">
+                <div style="text-align: center">
+
+                    <div>
+                        <b>吳旻蓁</b>
+                    </div>
+                    <div style="margin-bottom:20px;">jennifer91037@gmail.com</div>
+                    <div>
+                        <b>陳韻如</b>
+                    </div>
+                    <div style="margin-bottom:20px;">105405184@nccu.edu.tw</div>
+                    <div>
+                        <b>龐家姍</b>
+                    </div>
+                    <div style="margin-bottom:20px;">jessepom54@gmail.com</div>
+                    <div>
+                        <b>鍾詠吉</b>
+                    </div>
+                    <div style="margin-bottom:20px;">103207346@mail2.nccu.tw</div>
+                    <div>
+                        <b>鄭順祥</b>
+                    </div>
+                    <div>tnfsh11340forever@gmail.com</div>
+
+                </div>
+            </div>
+        </div>
+        <p>
+            <div style="text-align:center; margin-top:40px;">
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                    好想要Call Me Maybe或「賴」著不走喔～
+                </button>
+            </div>
+        </p>
+        <div class="collapse" id="collapse3">
+            <div class="card card-body button-font">
+                <div style="text-align: center">抱歉沒有，請詢問本人。^_^</div>
+            </div>
+        </div>
 
     </article>
+
+
     <footer>
         <div class="flex-footer">
             <a href="https://stevenmanto.github.io/communication/aboutus" target="_self" style="text-decoration: none;color:black">
