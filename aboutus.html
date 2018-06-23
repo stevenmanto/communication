@@ -163,56 +163,68 @@
 
     body>header {
         background-color: #F2DCBA;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
     }
 
-    .image {
-        width: 100%
+    .card-title {
+        font-size: 24px;
+        font-weight: 700;
+        color: #6D615B
     }
 
+    .card-subtitle {
+        font-size: 20px;
+        font-weight: 700;
+        color: #6D615B
+    }
 
-    .related-box1 {
+    .card-text {
+
+        font-size: 18px;
+        font-weight: 300;
+        color: #6D615B;
+    }
+
+    .card-footer {
+
+        color: #6D615B;
+    }
+
+    .link {
+        text-decoration: none;
+        color: #D38D8E;
+        font-weight: bold;
+    }
+
+    .card-desk {
         width: 80%;
         margin: 40px auto 0 auto;
+        background-color: #F2DCBA;
         padding: 20px;
-        background-color: #92AFB5;
-
     }
 
-    .related-box1:hover {
-        background-color: white;
-        cursor: pointer;
+    .related-img {
+        width: 30%
     }
 
-    .related-box2 {
-        width: 80%;
-        margin: 40px auto 0 auto;
-        padding: 20px;
-        background-color: #D38D8E;
-
+    .text-bot {
+        text-align: right;
+        font-size: 12px;
+        color: #6D615B;
+    }
+    .card-body{
+        background-color: #F2DCBA
     }
 
-    .related-box2:hover {
-        background-color: white;
-        cursor: pointer;
-    }
-
-    .related-box3 {
-        width: 80%;
-        margin: 40px auto 0 auto;
-        padding: 20px;
-        background-color: #9FAA8F;
-    }
-
-    .related-box3:hover {
-        background-color: white;
-        cursor: pointer;
-    }
-
-
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
         .flex-footer {
             width: 200px;
+        }
+        .card-desk {
+            display: none;
+        }
+        .text-bot {
+            display: none
         }
 
 
@@ -226,17 +238,8 @@
             margin-left: 80px;
             margin-right: 80px;
         }
-        .image {
-            width: 80%;
-        }
-
-        .related-box1,
-        .related-box2,
-        .related-box3 {
-            width: 70%
-        }
-        .intro {
-            width: 70%
+        h1 {
+            text-align: center
         }
         .flex-container {
             width: 600px;
@@ -248,7 +251,31 @@
             width: 400px;
             letter-spacing: 1.5
         }
+        .card-deck {
+            display: none
+        }
+        .card-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: #6D615B
+        }
+
+        .card-subtitle {
+            font-size: 18px;
+            font-weight: 700;
+            color: #6D615B
+        }
+
+        .card-text {
+
+            font-size: 16px;
+            font-weight: 300;
+            color: #6D615B;
+            margin-bottom: 20px;
+        }
+
     }
+
 
     @media screen and (min-width:1024px) {
         .flex-footer {
@@ -258,16 +285,8 @@
             margin-left: 200px;
             margin-right: 200px;
         }
-        .image {
-            width: 60%;
-        }
-        .intro {
-            width: 50%
-        }
-        .related-box1,
-        .related-box2,
-        .related-box3 {
-            width: 50%
+        h1 {
+            text-align: center
         }
         .flex-container {
             width: 600px;
@@ -279,6 +298,30 @@
             width: 400px;
             letter-spacing: 2
         }
+        .card-deck {
+            display: none
+        }
+        .card-title {
+            font-size: 24px;
+            font-weight: 700;
+            color: #6D615B
+        }
+
+        .card-subtitle {
+            font-size: 18px;
+            font-weight: 700;
+            color: #6D615B
+        }
+
+        .card-text {
+
+            font-size: 16px;
+            font-weight: 300;
+            color: #6D615B;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
     }
 </style>
 <!--為什麼share button會是報導者啦XD-->
@@ -292,7 +335,7 @@
                 </div>
             </a>
 
-            <div class="flex-item2"> 我們畢業啦！</div>
+            <div class="flex-item2"> 製作團隊來也</div>
             <div class="flex-item3">
                 <a href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent('https://stevenmanto.github.io/communication/home'))));">
                     <img title="分享到Facebook" src="fb.png" width="30px" />
@@ -306,10 +349,140 @@
         </div>
 
     </header>
+
     <article>
+        <header>
+            <h1>本網站由五顆黑掉的肝製作而成</h1>
+        </header>
 
 
-    </article>
+        <div class="media card-desk">
+            <img class="align-self-center mr-3 related-img" src="wu.jpg" alt="吳旻蓁">
+            <div class="media-body">
+                <h4 class="card-title">吳旻蓁</h4>
+                <h4 class="card-subtitle">蓁愛每一天</h4>
+                <p class="card-text">我是政大新聞系的吳旻蓁，喜歡做白日夢、看劇，夢想是很老套的環遊世界。 雖然目前會延畢半年，但也準備面臨找工作的狀態了，希望未來能找到喜歡的工作，也希望自己不論如何都能保持對新聞的熱愛。By the way，如果有下輩子，想當一隻草履蟲。
+                </p>
+                <div class="text-bot">下輩子要當一個單細胞生物</div>
+            </div>
+        </div>
+
+        <div class="media card-desk">
+            <img class="align-self-center mr-3 related-img" src="ru.png" alt="陳韻如">
+            <div class="media-body">
+                <h4 class="card-title">陳韻如</h4>
+                <h4 class="card-subtitle">命韻好好玩</h4>
+                <p class="card-text">政大傳院不分系第三屆，要升大三。既期待又害怕面對未來的難題，希望能跟學長姐一樣撐過去，找到自己最擅長也最有興趣的那塊。然後好好用這些能力去幫助別人，也替自己積點陰德，下輩子才能投胎成一隻有錢人家的貓。
+                </p>
+                <div class="text-bot">但其實我不想長大啦</div>
+            </div>
+        </div>
+
+        <div class="media card-desk">
+            <img class="align-self-center mr-3 related-img" src="shan.JPG" alt="龐家姍">
+            <div class="media-body">
+                <h4 class="card-title">龐家姍</h4>
+                <h4 class="card-subtitle">姍姍來了</h4>
+                <p class="card-text">即將畢業但延畢半年的第一屆傳院不分系學生，大一時就決定大三要選新聞系的「異類」。嚴肅外表與一顆矛盾的心。期許自己成為somebody，為這個世界帶來一點點改變，這也是我對記者這份工作懷抱的憧憬。燃燒生命的肝火，勇敢追夢。
+                </p>
+                <div class="text-bot">這輩子一定要到NBA看Curry打球！</div>
+            </div>
+        </div>
+
+        <div class="media card-desk">
+            <img class="align-self-center mr-3 related-img" src="young.jpg" alt="鍾詠吉">
+            <div class="media-body">
+                <h4 class="card-title">鍾詠吉</h4>
+                <h4 class="card-subtitle">新聞吉先鋒</h4>
+                <p class="card-text">如果程式語言是21世紀的數位基本技能，感謝法賢老師帶領六六六的各位麻瓜們（一開始不懂扣得的人類）踏進這個「浪漫」的世界！希望未來能繼續精進自己的網頁製作能力，做出一個更成熟、更有趣的互動式網頁。
+                </p>
+                <div class="text-bot">數位世界的麻瓜少年正在打瞌睡</div>
+            </div>
+        </div>
+
+        <div class="media card-desk">
+            <img class="align-self-center mr-3 related-img" src="shun.jpg" alt="鄭順祥">
+            <div class="media-body">
+                <h4 class="card-title">鄭順祥</h4>
+                <h4 class="card-subtitle">逆光飛祥</h4>
+                <p class="card-text">其實比較習慣被叫鄭順。度過快往生的大四下就馬上要離開大學了，好快啊！能在畢業之前學到一點點code的皮毛覺得此生無憾了（淚目）希望未來回首看看自己時，能夠記得所有大學的美好，如果累了也記得有這麼一群人陪自己痛苦過哈哈哈。最後，未來的鄭順，不准變胖！順便工商一下我的廢文
+                        <a href="https://medium.com/@tnfsh11340forever" class="link" target="_blank">Medium</a>，歡迎來看看XD
+                </p>
+                <div class="text-bot">沒想到我會用祥吧　A_A</div>
+            </div>
+        </div>
+
+
+
+        <div class="card-deck">
+            <div class="card">
+                <img class="card-img-top" src="wu.jpg" alt="吳旻蓁">
+                <div class="card-body">
+                    <h4 class="card-title">吳旻蓁</h4>
+                    <h4 class="card-subtitle">蓁愛每一天</h4>
+                    <p class="card-text">我是政大新聞系的吳旻蓁，喜歡做白日夢、看劇，夢想是很老套的環遊世界。 雖然目前會延畢半年，但也準備面臨找工作的狀態了，希望未來能找到喜歡的工作，也希望自己不論如何都能保持對新聞的熱愛。By the way，如果有下輩子，想當一隻草履蟲。
+                    </p>
+                    <div class="text-bot">下輩子要當一個單細胞生物</div>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">下輩子要當一個單細胞生物</small>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="ru.png" alt="陳韻如">
+                <div class="card-body">
+                    <h4 class="card-title">陳韻如</h4>
+                    <h4 class="card-subtitle">命韻好好玩</h4>
+                    <p class="card-text">政大傳院不分系第三屆，要升大三。既期待又害怕面對未來的難題，希望能跟學長姐一樣撐過去，找到自己最擅長也最有興趣的那塊。然後好好用這些能力去幫助別人，也替自己積點陰德，下輩子才能投胎成一隻有錢人家的貓。
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">但其實我不想長大啦</small>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="shan.JPG" alt="龐家姍">
+                <div class="card-body">
+                    <h4 class="card-title">龐家姍</h4>
+                    <h4 class="card-subtitle">姍姍來了</h4>
+                    <p class="card-text">即將畢業但延畢半年的第一屆傳院不分系學生，大一時就決定大三要選新聞系的「異類」。嚴肅外表與一顆矛盾的心。期許自己成為somebody，為這個世界帶來一點點改變，這也是我對記者這份工作懷抱的憧憬。燃燒生命的肝火，勇敢追夢。</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">這輩子一定要到NBA看Curry打球！</small>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img class="card-img-top" src="young.jpg" alt="鍾詠吉">
+                <div class="card-body">
+                    <h4 class="card-title">鍾詠吉</h4>
+                    <h4 class="card-subtitle">新聞吉先鋒</h4>
+                    <p class="card-text">如果程式語言是21世紀的數位基本技能，感謝法賢老師帶領六六六的各位麻瓜們（一開始不懂扣得的人類）踏進這個「浪漫」的世界！希望未來能繼續精進自己的網頁製作能力，做出一個更成熟、更有趣的互動式網頁。
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">數位世界的麻瓜少年正在打瞌睡</small>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="shun.jpg" alt="鄭順祥">
+                <div class="card-body">
+                    <h4 class="card-title">鄭順祥</h4>
+                    <h4 class="card-subtitle">逆光飛祥</h4>
+                    <p class="card-text">其實比較習慣被叫鄭順。度過快往生的大四下就馬上要離開大學了，好快啊！能在畢業之前學到一點點code的皮毛覺得此生無憾了（淚目）希望未來回首看看自己時，能夠記得所有大學的美好，如果累了也記得有這麼一群人陪自己痛苦過哈哈哈。最後，未來的鄭順，不准變胖！順便工商一下我的廢文
+                        <a href="https://medium.com/@tnfsh11340forever" class="link" target="_blank">Medium</a>，歡迎來看看XD
+
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">沒想到我會用祥吧　A_A</small>
+                </div>
+            </div>
+        </div>
+
+   
+   </article>
     <footer>
         <div class="flex-footer">
             <a href="https://stevenmanto.github.io/communication/aboutus" target="_self" style="text-decoration: none;color:black">
