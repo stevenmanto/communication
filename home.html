@@ -2,20 +2,21 @@
 
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-97231657-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-97231657-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'UA-97231657-1');
-</script>
+        gtag('config', 'UA-97231657-1');
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
-        <meta property="og:title" content="首屆政大傳院大一大二畢業生畢業啦！" />
+    <meta property="og:title" content="首屆政大傳院大一大二畢業生畢業啦！" />
 
-    <meta property="og:description" content="本專案將帶您領略大一大二不分系的全貌，不止最常見的課程規劃、分配，更帶給您學生、老師們對不分系的真心話！不論您是對政大傳院有任何想像的高中生，正在猶豫該分流至哪個系的本系生，關心學生的傳院教師，或是想一窺兒女在學校學些什麼的家長們，看這裡就對啦！" />
+    <meta property="og:description" content="本專案將帶您領略大一大二不分系的全貌，不止最常見的課程規劃、分配，更帶給您學生、老師們對不分系的真心話！不論您是對政大傳院有任何想像的高中生，正在猶豫該分流至哪個系的本系生，關心學生的傳院教師，或是想一窺兒女在學校學些什麼的家長們，看這裡就對啦！"
+    />
 
     <meta property="og:url" content="https://stevenmanto.github.io/communication/home" />
 
@@ -27,16 +28,16 @@
     <!-- 瀏覽器上的 tab 的縮圖 -->
     <link href="https://stevenmanto.github.io/communication/logo.png" rel="shortcut icon" />
     <!-- Hotjar Tracking Code for https://stevenmanto.github.io/communication/home -->
-<script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:926462,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
+    <script>
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+            h._hjSettings = { hjid: 926462, hjsv: 6 };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script'); r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
 </head>
 <style>
     article {
@@ -90,7 +91,7 @@
 
 
     h5 {
-        font-size: 28px;
+        font-size: 24px;
         font-weight: 700;
         color: #6D615B
     }
@@ -235,9 +236,22 @@
         color: #6D615B
     }
 
-    @media screen and (max-width: 768px) {
+    .related-font {
+        font-size: 18px;
+        font-weight: 500;
+        color: #6D615B
+    }
+
+    .related-img {
+        width: 30%
+    }
+
+    @media screen and (max-width: 767px) {
         .flex-footer {
             width: 200px;
+        }
+        .related-font {
+            display: none;
         }
 
 
@@ -260,6 +274,7 @@
         .related-box3 {
             width: 70%
         }
+
         .intro {
             width: 70%
         }
@@ -292,8 +307,13 @@
         .related-box1,
         .related-box2,
         .related-box3 {
-            width: 40%
+            width: 60%
         }
+        .related-img {
+            width: 20%
+        }
+
+
         .flex-container {
             width: 600px;
         }
@@ -343,25 +363,34 @@
     </div>
 
     <div class="related-reading">所有主題</div>
+    <a href="https://judy19980730.github.io/nccucoc/graduation_news" target="_self" style="text-decoration: none;color:#6D615B"
+    />
     <div class="media related-box1">
+        <img class="align-self-center mr-3 related-img" src="https://judy19980730.github.io/nccucoc/cover.jpg" alt="關於政大傳院不分系"></img>
         <div class="media-body">
-            <h5>關於傳院不分系</h5>
+            <h5>關於政大傳院不分系</h5>
+            <div class="related-font">政大傳院不分系給予學生探索興趣的時間，讓學生利用兩年的時間選進自己真正想念的系。大二升大三時，將依學生的志願選填進入新聞、廣告或廣電三大專業領域繼續學習，而至今不分系已經完成第三屆分系。</div>
         </div>
     </div>
 
+    <a href="https://judy19980730.github.io/nccucoc/graduation_news" target="_self" style="text-decoration: none;color:#6D615B"
+    />
     <div class="media related-box2">
+        <img class="align-self-center mr-3 related-img" src="https://judy19980730.github.io/nccucoc/cover.jpg" alt="關於政大傳院不分系"></img>
         <div class="media-body">
-            <h5>師生眼中的不分系</h5>
+            <h5>關於政大傳院不分系</h5>
+            <div class="related-font">政大傳院不分系給予學生探索興趣的時間，讓學生利用兩年的時間選進自己真正想念的系。大二升大三時，將依學生的志願選填進入新聞、廣告或廣電三大專業領域繼續學習，而至今不分系已經完成第三屆分系。</div>
         </div>
     </div>
-    <a href="https://stevenmanto.github.io/communication/mainpage" target="_self" style="text-decoration: none">
-        <div class="media related-box3">
-            <div class="media-body">
-                <h5 class="mt-0">傳播的現實與挑戰【影視系列專題】</h5>
-            </div>
+    <a href="https://stevenmanto.github.io/communication/mainpage" target="_self" style="text-decoration: none;color:#6D615B"
+    />
+    <div class="media related-box3">
+        <img class="align-self-center mr-3 related-img" src="https://stevenmanto.github.io/communication/award.jpg" alt="關於政大傳院不分系"></img>
+        <div class="media-body">
+            <h5>大銀幕背後－影視產業的現實與挑戰【影視系列專題】</h5>
+            <div class="related-font">政大傳院不分系給予學生探索興趣的時間，讓學生利用兩年的時間選進自己真正想念的系。大二升大三時，將依學生的志願選填進入新聞、廣告或廣電三大專業領域繼續學習，而至今不分系已經完成第三屆分系。</div>
         </div>
-    </a>
-
+    </div>
 
 
     </article>
